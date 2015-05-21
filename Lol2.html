@@ -1,0 +1,146 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link rel="stylesheet" type="text/css" href="mystylesheet.css">
+
+
+<script>
+function startTime() {
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
+    var s=today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML = h+":"+m+":"+s;
+    var t = setTimeout(function(){startTime()},500);
+}
+
+function checkTime(i) {
+    if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script></head>
+
+
+
+
+
+<body onload="startTime()" background="Yes.jpg"><button onclick="myFunction1()">Click the magical day button!</button>
+
+<p id="demo1"></p>
+
+<script>
+function myFunction1() {
+    var day;
+    switch (new Date().getDay()) {
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case  6:
+            day = "Saturday";
+            break;
+    }
+    document.getElementById("demo1").innerHTML = "<mark>Today is </mark>" + day;
+}
+</script>
+
+
+
+
+<div id="txt"></div>
+
+
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").mouseenter(function(){
+    $("p").css("background-color","Blue");
+  });
+  $("p").mouseleave(function(){
+    $("p").css("background-color","Green");
+  });
+});
+</script>
+<font size="28"> <center> <p> Welcome To Maximilian's; A Rapping Christmas!</p> </center> </font>
+
+
+
+<script>
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("#div1").fadeOut();
+    $("#div2").fadeOut("slow");
+    $("#div3").fadeOut(3000);
+  });
+});
+</script>
+
+
+
+<p1><mark>Demonstrate fadeOut() with different parameters.</mark></p1>
+<button class="btn1">Click to fadeout the christmas boxes!</button>
+<br><br>
+<div id="div1" style="width:80px;height:80px;background-color:green;"></div><br>
+<div id="div2" style="width:80px;height:80px;background-color:red;"></div><br>
+
+
+<style>
+img {
+    opacity: .8;
+    filter: alpha(opacity=40);
+}
+</style>
+
+
+
+<h1><marquee><mark>Image Transparency</mark></marquee></h1>
+<center><img src="P-Diddy.jpg" width="300" height="300" alt="klematis"></center>
+
+
+<button class="1" onclick="myFunction()">Don't click this plz.</button>
+
+<script>
+function myFunction() {
+    alert("I am poping up in yo face.");
+}
+</script>
+
+<form>
+<input type="button" onclick="window.print()">
+</form>
+
+<form method="get" action="http://search.yahoo.com/search">
+<fieldset>
+<input type="text" name="p" size="35" maxlength="255" value="">
+<input type="submit" value="Search this site with YaHoo!">
+<input type="hidden" name="vs" value="www.websiteadministrator.com.au">
+</fieldset>
+</form>
+
+<mark><script>document.write("Your Monitor Resolution Is : "+screen.width + " x " + screen.height)</script>Your Monitor Resolution Is : 1920 x 1080<a target="_blank" style="font-size: 8pt; text-decoration: none"></a></mark>
+
+
+<h1><center<mark><a href="stencyl.html">My Stencyl Game</a></mark></center></h1>
+<h1><center<mark><a href="ios.html">My IOS Game</a></mark></center></h1>
+<h1><center<mark><a href="unity.html">My Unity Game</a></mark></center></h1>
+<h1><center<mark><a href="Resume.html">My Resume</a></mark></center></h1>
+
+<center><script src="http://javascriptbestcodes.com/codes/heart-bubble.js"></script><script type="text/javascript" src="http://abzar20.com/userdata/cmn/parts25.js?us=1&amp;id=11&amp;bic=7&amp;nc=0&amp;im1=b1-1338277701.png&amp;im2=b2-1338277709.png&amp;im3=b3-1338277714.png&amp;im4=b4-1338277721.png&amp;im5=b5-1338277728.png&amp;im6=b6-1338277735.png&amp;im7=b7-1338277741.png&amp;c1=10&amp;c2=2&amp;c3=4&amp;c8=0&amp;c9=7&amp;c10=2&amp;c11=4"></script></center></body></html>
